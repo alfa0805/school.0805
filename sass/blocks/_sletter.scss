@@ -1,0 +1,97 @@
+.sletter {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color:rgba(55, 68, 169, 0.329);
+  &-text {
+    //styleName: h6;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $yellow;
+  }
+  &-title {
+    //styleName: h3;
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $title;
+  }
+  &-matn {
+    //styleName: paragraph;
+    padding-top: 20px;
+    width: 340px;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $text;
+    margin: 0 auto;
+  }
+  &__form {
+    box-sizing: content-box;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    width: 688px;
+    height: 58px;
+    margin: 0 auto;
+    &-input {
+      padding-left: 20px;
+      width: 80%;
+      height: 100%;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color:$title;
+      outline-color: $yellow;
+    }
+    &-btn {
+      width: 20%;
+      height: 100%;
+      background-color: $yellow;
+      color: $white;
+      border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width:850px){
+  .sletter{
+    &__form{
+      width:500px;
+    }
+  }
+}
+@media screen and (max-width:650px){
+  .sletter{
+    &__form{
+      width:300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
