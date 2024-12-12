@@ -15,7 +15,7 @@
       right: 0px;
       width: 650px;
       height: 550px;
-      z-index: -1;
+      z-index: 0;
     }
   }
   &__row {
@@ -123,6 +123,7 @@
     flex-wrap: wrap;
     gap: 35px;
     &-card {
+    z-index: 2;
       border-radius:8px;
       padding: 35px;
       width: 330px;
