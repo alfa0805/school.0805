@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+<!-- ---------------header--------------- -->
+<header class="header">
         <div class="container">
            <div class="header__logo">
             <img src="./images/Brandname.svg" alt="img" class="header__logo-img">
@@ -32,62 +34,345 @@
                 <p class="header__block-text">Login</p>
                 <button class="header__block-btn">JOIN US <img src="./images/icn arrow-right .icn-xs.png" alt=""></button>
             </div>
-                <!-- -----------------menyu------------------- -->
-           </div>
-           <div class="header__menyu show">
-            <ul class="header__menyu-list">
-                <li class="header__menyu-item">
-                    <a href="#" class="header__menyu-link">Home</a>
-                </li>
-                <li class="header__menyu-item">
-                    <a href="#" class="header__menyu-link">Product</a>
-                </li>
-                <li class="header__menyu-item">
-                    <a href="#" class="header__menyu-link">Pricing</a>
-                </li>
-                <li class="header__menyu-item">
-                    <a href="#" class="header__menyu-link">Contact</a>
-                </li>
-            </ul>
-            <div class="header__menyu-button">
-                <p class="header__menyu-text">Login</p>
-                <button class="header__menyu-btn">JOIN US <img src="./images/icn arrow-right .icn-xs.png" alt=""></button>
-            </div>
-           </div>
-           <div class="header__bars">
-                <i class="fa-solid fa-bars  bars"></i>
-           </div> 
         </div>
-    </header>
-    <aside class="aside">
+        <div class="header__bars">
+            <i class="fa-solid fa-bars  bars"></i>
+        </div> 
+    </div>
+</header>
+<!-- ---------------menyu---------------- -->
+<div class="header__menyu show">
+ <ul class="header__menyu-list">
+     <li class="header__menyu-item">
+         <a href="#" class="header__menyu-link">Home</a>
+     </li>
+     <li class="header__menyu-item">
+         <a href="#" class="header__menyu-link">Product</a>
+     </li>
+     <li class="header__menyu-item">
+         <a href="#" class="header__menyu-link">Pricing</a>
+     </li>
+     <li class="header__menyu-item">
+         <a href="#" class="header__menyu-link">Contact</a>
+     </li>
+ </ul>
+ <div class="header__menyu-button">
+     <p class="header__menyu-text">Login</p>
+     <button class="header__menyu-btn">JOIN US <img src="./images/icn arrow-right .icn-xs.png" alt=""></button>
+ </div>
+</div>
+<!-- ---------------aside---------------- -->
+<aside class="aside">
         <div class="container">
-            <div class="aside__row">
-                <p class="aside__row-text">Join Us</p>
-                <h2 class="aside__row-title">25K+ STUDENTS TRUST US</h2>
-                <p class="aside__row-matn">Every day brings with it a fresh set of learning possibilities.</p>
-                <div class="aside__row-div">
-                    <button class="aside__row-leftbtn">Get Quote Now</button>
-                    <button class="aside__row-rightbtn">Learn More</button>
+            <div class="aside__div">
+                <div class="aside__row">
+                    <p class="aside__row-text">Join Us</p>
+                    <h2 class="aside__row-title">25K+ STUDENTS TRUST US</h2>
+                    <p class="aside__row-matn">Every day brings with it a fresh set of learning possibilities.</p>
+                    <div class="aside__row-div">
+                        <button class="aside__row-leftbtn">Get Quote Now</button>
+                        <button class="aside__row-rightbtn">Learn More</button>
+                    </div>
+                </div>
+                <div class="aside__right">
+                    <img class="aside__right-img" src="./images/none.png" alt="img">
                 </div>
             </div>
-            <div class="aside__right">
-                <img class="aside__right-img" src="./images/none.png" alt="img">
+            <div class="aside__cards">
+                <div class="aside__cards-card">
+                    <div class="aside__cards-div">
+                        <img src="./images/001-graduation-hat.png" alt="icon" class="aside__cards-img">
+                    </div>
+                    <h2 class="aside__cards-title">Expert instruction</h2>
+                    <hr class="aside__cards-hr">
+                    <p class="aside__cards-text">The gradual accumulation of 
+                        information about atomic and 
+                        small-scale behaviour...</p>
+                </div>
+                <div class="aside__cards-card">
+                    <div class="aside__cards-div">
+                        <img src="./images/009-backpack-1.png" alt="icon" class="aside__cards-img">
+                    </div>
+                    <h2 class="aside__cards-title">Training Courses</h2>
+                    <hr class="aside__cards-hr">
+                    <p class="aside__cards-text">The gradual accumulation of 
+                        information about atomic and 
+                        small-scale behaviour...</p>
+                </div>
+                <div class="aside__cards-card">
+                    <div class="aside__cards-div">
+                        <img src="./images/icon cool-icon-n13.png" alt="icon" class="aside__cards-img">
+                    </div>
+                    <h2 class="aside__cards-title">Expert instruction</h2>
+                    <hr class="aside__cards-hr">
+                    <p class="aside__cards-text">The gradual accumulation of 
+                        information about atomic and 
+                        small-scale behaviour...</p>
+                </div>
             </div>
         </div>
-    </aside>
-    <div class="sletter">
-        <div class="container">
-            <p class="sletter-text">Newsletter</p>
-            <h2 class="sletter-title">Watch our Courses</h2>
-            <p class="sletter-matn">Problems trying to resolve the conflict between 
+</aside>
+<!-- ---------------every---------------- -->
+<div class="every">
+    <div class="container">
+        <div class="every__blok">
+            <a href="#" class="every__blok-link">Practice Advice</a>
+            <h2 class="every__blok-title">Every Client Matters</h2>
+            <p class="every__blok-text">Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics </p>
-            <form action="" class="sletter__form">
-                <input class="sletter__form-input" type="email" required placeholder="Your Email">
-                <button class="sletter__form-btn">Subscribe</button>
-            </form>
         </div>
+        <ul class="every__list">
+            <li class="every__list-item">
+                <img src="./images/stars.png" alt="img" class="every__list-img">
+                <p class="every__list-text">Slate helps you see 
+                    how many more days you need to work to reach your financial goal for the month and year.
+                </p>
+                <div class="every__list-cerd">
+                    <img src="./images/every1.png" alt="img" class="every__list-pic">
+                    <span class="every__list-span">
+                        <p class="every__list-title">Regina Miles</p>
+                        <p class="every__list-subtitle">Designer</p>
+                    </span>
+                </div>
+            </li>
+            <li class="every__list-item">
+                <img src="./images/stars.png" alt="img" class="every__list-img">
+                <p class="every__list-text">Slate helps you see 
+                    how many more days you need to work to reach your financial goal for the month and year.
+                </p>
+                <div class="every__list-cerd">
+                    <img src="./images/every2.png" alt="img" class="every__list-pic">
+                    <span class="every__list-span">
+                        <p class="every__list-title">Regina Miles</p>
+                        <p class="every__list-subtitle">Designer</p>
+                    </span>
+                </div>
+            </li>
+            <li class="every__list-item">
+                <img src="./images/stars.png" alt="img" class="every__list-img">
+                <p class="every__list-text">Slate helps you see 
+                    how many more days you need to work to reach your financial goal for the month and year.
+                </p>
+                <div class="every__list-cerd">
+                    <img src="./images/every3.png" alt="img" class="every__list-pic">
+                    <span class="every__list-span">
+                        <p class="every__list-title">Regina Miles</p>
+                        <p class="every__list-subtitle">Designer</p>
+                    </span>
+                </div>
+            </li>
+        </ul>
     </div>
-
+</div>
+<!-- ---------------popular-------------- -->
+<div class="popular">
+    <div class="container">
+        <div class="popular__blok">
+            <a href="#" class="popular__blok-link">Team</a>
+            <h2 class="popular__blok-title">Our Popular Courses</h2>
+            <p class="popular__blok-text">Problems trying to resolve the conflict between 
+                the two major realms of Classical physics: Newtonian mechanics 
+            </p>
+        </div>
+        <ul class="popular__list">
+            <li class="popular__list-item">
+                <div class="popular__list-subimg">
+                    <img src="./images/popular1.png" alt="img" class="popular__list-img">
+                </div>
+                <h4 class="popular__list-title">Julian Jameson</h4>
+                <p class="popular__list-text">Profession</p>
+                <ul class="popular__list-list">
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-facebook popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-instagram popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-twitter popular__list-icon"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="popular__list-item">
+                <div class="popular__list-subimg">
+                    <img src="./images/popular2.png" alt="img" class="popular__list-img">
+                </div>
+                <h4 class="popular__list-title">Julian Jameson</h4>
+                <p class="popular__list-text">Profession</p>
+                <ul class="popular__list-list">
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-facebook popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-instagram popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-twitter popular__list-icon"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="popular__list-item">
+                <div class="popular__list-subimg">
+                    <img src="./images/popular3.png" alt="img" class="popular__list-img">
+                </div>
+                <h4 class="popular__list-title">Julian Jameson</h4>
+                <p class="popular__list-text">Profession</p>
+                <ul class="popular__list-list">
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-facebook popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-instagram popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-twitter popular__list-icon"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="popular__list-item">
+                <div class="popular__list-subimg">
+                    <img src="./images/popular4.png" alt="img" class="popular__list-img">
+                </div>
+                <h4 class="popular__list-title">Julian Jameson</h4>
+                <p class="popular__list-text">Profession</p>
+                <ul class="popular__list-list">
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-facebook popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-instagram popular__list-icon"></i>
+                    </li>
+                    <li class="popular__list-icons">
+                        <i class="fa-brands fa-twitter popular__list-icon"></i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ---------------sletter-------------- -->
+<div class="sletter">
+    <div class="container">
+        <p class="sletter-text">Newsletter</p>
+        <h2 class="sletter-title">Watch our Courses</h2>
+        <p class="sletter-matn">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        <form action="" class="sletter__form">
+            <input class="sletter__form-input" type="email" required placeholder="Your Email">
+            <button class="sletter__form-btn">Subscribe</button>
+        </form>
+    </div>
+</div>
+<!-- ---------------footer--------------- -->
+<div class="footer">
+    <div class="container">
+        <ul class="footer__list">
+            <li class="footer__list-item">
+                <ul class="footer__sublist">
+                    <li class="footer__sublist-item">
+                        <h2 class="footer__sublist-title">Company Info</h2>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">About Us</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Carrier</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">We are hiring</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Blog</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__list-item">
+                <ul class="footer__sublist">
+                    <li class="footer__sublist-item">
+                        <h2 class="footer__sublist-title">Legal</h2>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">About Us</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Carrier</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">We are hiring</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Blog</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__list-item">
+                <ul class="footer__sublist">
+                    <li class="footer__sublist-item">
+                        <h2 class="footer__sublist-title">Features</h2>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Business Marketing</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">User Analytic</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Live Chat</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Unlimited Support</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__list-item">
+                <ul class="footer__sublist">
+                    <li class="footer__sublist-item">
+                        <h2 class="footer__sublist-title">Resources</h2>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">IOS & Android</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Watch a Demo</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">Customers</a>
+                    </li>
+                    <li class="footer__sublist-item">
+                        <a href="#" class="footer__sublist-link">API</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__list-item">
+                <ul class="footer__sublist">
+                    <li class="footer__sublist-item">
+                        <h2 class="footer__sublist-title">Get In Touch</h2>
+                    </li>
+                    <li class="footer__sublist-subitem">
+                        <div class="footer__sublist-icons">
+                            <i class="fa-solid fa-phone footer__sublist-icon"></i>
+                        </div>
+                        <a href="#" class="footer__sublist-link">(480) 555-0103</a>
+                    </li>
+                    <li class="footer__sublist-subitem">
+                        <div class="footer__sublist-iconlocs">
+                            <i class="fa-solid fa-location-dot footer__sublist-iconloc"></i>
+                        </div>
+                        <a href="#" class="footer__sublist-link">4517 Washington Ave. Manchester, 
+                            Kentucky 39495
+                        </a>
+                    </li>
+                    <li class="footer__sublist-subitem">
+                        <div class="footer__sublist-icons">
+                            <i class="fa-solid fa-envelope footer__sublist-icon"></i>
+                        </div>
+                        <a href="#" class="footer__sublist-link">debra.holt@example.com</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./main.js"></script>

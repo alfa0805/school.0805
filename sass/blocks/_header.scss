@@ -1,10 +1,12 @@
 .header {
+  // overflow: hidden;  
   position: relative;
   .container {
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // overflow: hidden;
     // gap: 100px;
   }
   &__logo {
@@ -55,13 +57,87 @@
       color: $yellow;
     }
     &-btn {
+      display: flex;
+      align-items:center;
+      justify-content:space-between;
       width: 130px;
       height: 45px;
       padding: 10px 25px;
-      gap: 15px;
       border-radius: 5px;
-      border:none;
-      background-color:$yellow;
+      border: none;
+      background-color: $yellow;
+      cursor: pointer;
+
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 10px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $white;
+    }
+  }
+  &__menyu {
+    display:none;
+    // position: absolute;
+    // top: 70px;
+    // right: -100%;
+    margin: 0 auto;
+    width: 200px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    &-list {
+      padding-top: 25px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 17px;
+    }
+    &-item a {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+
+    &-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      gap: 17px;
+    }
+    &-text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: right;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $yellow;
+    }
+    &-btn {
+      width: 130px;
+      height: 45px;
+      padding: 10px 25px;
+      display: flex;
+      align-items:center;
+      justify-content:space-between;
+      border-radius: 5px;
+      border: none;
+      background-color: $yellow;
       cursor: pointer;
 
       font-family: Montserrat;
@@ -72,100 +148,59 @@
       text-align: left;
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
-      color:$white;
+      color: $white;
     }
   }
-  &__menyu{
-    position: absolute;
-    top: 70px;
-    right: -100%;
-    width: 200px;
-    height:350px;
-    background-color:aqua;
-    border-radius:10px;
-    transition: all 0.5s ease;
-    &-list{
-        padding-top:25px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        gap:17px;
-    }
-    &-item a {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 0.20000000298023224px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: $text;
-    }
-
-    &-button{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        padding-top:50px;
-        gap:17px;
-    }
-    &-text {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 22px;
-        letter-spacing: 0.20000000298023224px;
-        text-align: right;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: $yellow;
-      }
-      &-btn {
-        width: 130px;
-        height: 45px;
-        padding: 10px 25px;
-        gap: 15px;
-        border-radius: 5px;
-        border:none;
-        background-color:$yellow;
-        cursor: pointer;
-  
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 22px;
-        letter-spacing: 0.20000000298023224px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color:$white;
-      }
-  }
-  &__bars{
-    display:none;
+  &__bars {
+    display: none;
   }
 }
-
-@media screen and (max-width:850px){
-    .header{
-        &__block{
-            display:none;
-        }
-        &__bars{
-            display: block;
-            box-sizing: content-box;
-            padding-right:20px;
-            
-          }
+@media screen and (max-width: 1025px){
+  .header{
+    .container{
+      padding:10px;
     }
-    .bars{
-        font-size:23px;
-        color: $yellow;
+    &__block{
+      &-btn{
+        padding: 7px 25px;
+      }
     }
-    .show{
-        right: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header {
+    .container{
+      padding:10px;
     }
-    
+    &__block {
+      display: none;
+    }
+    &__bars {
+      display: block;
+      box-sizing: content-box;
+      padding-right: 20px;
+    }
+  }
+  .bars {
+    font-size: 23px;
+    color: $yellow;
+  }
+  .show {
+    display: block;
+    // right: 20px;
+  }
+}
+@media screen and (max-width: 685px){
+  .header{
+    .container{
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .header{
+    .container{
+      padding: 10px;
+    }
+  }
 }
