@@ -19,8 +19,8 @@
     flex-direction: column;
     align-items: start;
     gap: 10px;
-    &-item:nth-child(1){
-        padding-bottom: 10px;
+    &-item:nth-child(1) {
+      padding-bottom: 10px;
     }
     &-title {
       //styleName: h5;
@@ -45,7 +45,7 @@
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
       color: $text;
-      &:hover{
+      &:hover {
         color: red;
         font-size: 15px;
         transition: all 0.3s;
@@ -56,27 +56,26 @@
       align-items: center;
       gap: 7px;
     }
-    &-icons{
-        width: 24px;
-        height: 24px;
+    &-icons {
+      width: 24px;
+      height: 24px;
     }
-    &-iconlocs{
-        width: 30px;
-        height: 24px;
+    &-iconlocs {
+      width: 30px;
+      height: 24px;
     }
-    &-icon{
-        font-size:20px;
-        color: $yellow;
+    &-icon {
+      font-size: 20px;
+      color: $yellow;
     }
-    &-iconloc{
-        font-size: 24px;
-        color: $yellow;
+    &-iconloc {
+      font-size: 24px;
+      color: $yellow;
     }
   }
 }
-@media screen and (max-width:600px){
-    .footer{
-        padding: 40px 10px;
-    }
-    
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 40px 10px;
+  }
 }
