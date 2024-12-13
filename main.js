@@ -1,3 +1,5 @@
+AOS.init();
+
 let headermenyu = document.querySelector(".header__menyu");
 let bars = document.querySelector(".header__bars");
 
